@@ -14,9 +14,9 @@ INSERT INTO NATURALIDADE (cidade) VALUES ('Mirandela');
 INSERT INTO NATURALIDADE (cidade) VALUES ('Lixa');
 INSERT INTO NATURALIDADE (cidade) VALUES ('Porto');
 
-INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome) VALUES (1, 912359725, '95-08-01', 'Rua Sesamo', 'Joao N.');
-INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome) VALUES (4, 937546824, '96-03-30', 'Av. Central', 'Manuel F.');
-INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome) VALUES (2, 964562873, '93-10-24', 'Rua Joao Fernandes', 'Rita L.');
+INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome, reputacao) VALUES (1, 912359725, '95-08-01', 'Rua Sesamo', 'Joao N.', 1);
+INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome, reputacao) VALUES (4, 937546824, '96-03-30', 'Av. Central', 'Manuel F.', 1);
+INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome, reputacao) VALUES (2, 964562873, '93-10-24', 'Rua Joao Fernandes', 'Rita L.', 2);
 INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome) VALUES (6, 945683261, '91-07-21', 'Av. 25 de Abril', 'Beatriz G.');
 INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome) VALUES (5, 935629874, '99-06-08', 'Tr. Sto Contestavel', 'Luis A.');
 INSERT INTO PERFIL (idNaturalidade, contacto, dataDeNascimento, morada, nome) VALUES (3, 924653867, '00-02-04', 'Rua Alfredo Costa', 'Jose R.');
@@ -59,7 +59,7 @@ INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (3, '15-06-26', 'B114',
 INSERT INTO GRUPO (idAdministrador, nome) VALUES (2, 'Grupo de 2 ano');
 INSERT INTO GRUPO (idAdministrador, descricao, nome) VALUES (3, 'Grupo para duvidas.', 'Grupo de 1 ano');
 
-INSERT INTO POST (idCriador, data, hora, texto) VALUES (2, '15-02-20', '2015-02-20 14:13:13.344', 'Consegui bilhetes para o concerto');
+INSERT INTO POST (idCriador, data, hora, texto, reputacao) VALUES (2, '15-02-20', '2015-02-20 14:13:13.344', 'Consegui bilhetes para o concerto', 2);
 INSERT INTO POST (idCriador, data, hora, texto) VALUES (1, '15-03-04', '2015-03-04 09:31:55.520', 'Odeio transito!');
 INSERT INTO POST (idCriador, data, hora, texto) VALUES (3, '15-03-13', '2015-03-13 12:01:34.102', '#rasgaissotudo');
 INSERT INTO POST (idCriador, data, hora, texto) VALUES (6, '15-04-01', '2015-04-01 15:22:45.321', 'A dar tudo no estudo para o exames');
@@ -116,12 +116,12 @@ INSERT INTO PERFILGRUPO VALUES (1, 2);
 INSERT INTO PERFILGRUPO VALUES (4, 1);
 INSERT INTO PERFILGRUPO VALUES (4, 2);
 
-INSERT INTO REPUTACAO /*(idReputacao)*/ DEFAULT VALUES;
-INSERT INTO REPUTACAO /*(idReputacao)*/ DEFAULT VALUES;
-INSERT INTO REPUTACAO /*(idReputacao)*/ DEFAULT VALUES;
-INSERT INTO REPUTACAO /*(idReputacao)*/ DEFAULT VALUES;
-INSERT INTO REPUTACAO /*(idReputacao)*/ DEFAULT VALUES;
-INSERT INTO REPUTACAO /*(idReputacao)*/ DEFAULT VALUES;
+INSERT INTO REPUTACAO DEFAULT VALUES;
+INSERT INTO REPUTACAO DEFAULT VALUES;
+INSERT INTO REPUTACAO DEFAULT VALUES;
+INSERT INTO REPUTACAO DEFAULT VALUES;
+INSERT INTO REPUTACAO DEFAULT VALUES;
+INSERT INTO REPUTACAO DEFAULT VALUES;
 
 INSERT INTO REPUTACAOPERFIL VALUES (1, 2, 1);
 INSERT INTO REPUTACAOPERFIL VALUES (1, 3, 2);
