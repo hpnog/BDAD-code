@@ -1,0 +1,7 @@
+restriçoes de dominio
+reputaçao errada no esquema relacional (super classe reputaçao e divisao nas outras duas)
+problemas em amizade também.
+
+interrogaçoes
+perfis ordenados por nmr de amigos
+posts ordenados por reputaçao
