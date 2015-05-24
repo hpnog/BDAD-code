@@ -1,7 +1,28 @@
-restri�oes de dominio
-reputa�ao errada no esquema relacional (super classe reputa�ao e divisao nas outras duas)
-problemas em amizade tamb�m.
+ADICIONAR VALORES NAO NULOS E VALORES MAIORES QUE 0 POR EXEMPLO
+restriçoes de dominio
 
-interroga�oes
+
+
+ALTERAR UML
+*reputaçao errada no esquema relacional (super classe reputaçao e divisao nas outras duas)
+*problemas em amizade também.
+
+
+
+TRIGGERS
+
+nao pode pedir amizade a si próprio
+se um perfil for adicionada com uma naturalidade que nao existe criar uma cujo nome da cidade é unknown
+
+INTERROGAÇÕES
+
 perfis ordenados por nmr de amigos
-posts ordenados por reputa�ao
+posts ordenados por reputaçao
+listar todos os amigos da naturalidade X
+listar todos os grupos com o utilizador X
+listar todos os eventos com o utilizador X
+listar todos os perfis de Naturalidade X
+listar amigos do utilizador X ordenadas por idade
+listar os 5 perfis com mais reputação
+Mostrar a naturalidade com mais pessoas
+Listar a média de idades dos amigos dos perfis
