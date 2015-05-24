@@ -30,6 +30,18 @@ INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (3
 INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (6, 917650241, '2000-01-03', 'Tr. Antonio Fragoso', 'Carla M.');
 INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (5, 920908765, '1993-12-24', 'Rua Roberto Frio', 'Joaquim B.');
 INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (6, 919290653, '1997-10-14', 'Rua dos Bragas', 'Tome D.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (2, 917263928, '1992-09-01', 'Av. Gonçalves Abreu', 'Hugo A.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (2, 939871277, '1985-07-21', 'Rua Direita', 'Cecilia J.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (4, 939077829, '1989-08-30', 'Av. Central', 'Carlos Q.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (3, 967872348, '1994-01-03', 'Rua Dr. Filipe Trigo', 'Patricia T.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (3, 912987372, '1988-11-05', 'Rua Alfredo Costa', 'Bruno V.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (5, 918723892, '1980-07-11', 'Tr. Sto Contestavel', 'Rita F.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (6, 960981201, '1991-12-23', 'Av. 25 de Abril', 'Vasco C.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (2, 967823479, '1982-06-12', 'Rua Leao', 'Nuno G.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (1, 912312325, '1999-05-02', 'Rua Restauradores', 'Xavier S.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (4, 918237755, '1981-13-09', 'Av. Central', 'Patricia P.');
+INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (6, 933242423, '1991-12-04', 'Av. 25 de Abril', 'Bruno G.');
+
 
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (1, 5, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (1, 7, 1);
