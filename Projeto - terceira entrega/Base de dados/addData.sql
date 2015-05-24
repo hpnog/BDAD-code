@@ -45,8 +45,17 @@ INSERT INTO PERFIL (idNatur, contacto, dataDeNascimento, morada, nome) VALUES (6
 
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (1, 5, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (1, 7, 1);
-INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (1, 3, 1);
-INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (1, 8, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (2, 3, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (3, 8, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (7, 1, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (6, 2, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (4, 8, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (9, 6, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (8, 5, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (2, 3, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (10, 11, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (9, 12, 1);
+INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (3, 13, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita) VALUES (8, 9);
 
 --Valores de numeroDeMensagens inicializados tendo em conta numero de mensagens adicionadas posteriormente
@@ -61,15 +70,36 @@ INSERT INTO MENSAGEM (idChat, data, hora, texto) VALUES (1, '15-04-17', '2015-04
 INSERT INTO MENSAGEM (idChat, data, hora, texto) VALUES (1, '15-04-18', '2015-04-18 05:35:21.175','Ainda nao!');
 INSERT INTO MENSAGEM (idChat, data, hora, texto) VALUES (3, '15-04-19', '2015-04-19 15:25:01.001','Alguem esta ai?');
 
-INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (3, '15-06-21', 'B321', 'Aula de BDAD');
-INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (4, '15-06-22', 'B310', 'Aula de CGRA');
-INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (5, '15-06-23', 'B007', 'Aula de LPOO');
-INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (1, '15-06-24', 'B214', 'Aula de CAL');
-INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (3, '15-06-25', 'B008', 'Aula de BDAD');
-INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (3, '15-06-26', 'B114', 'Aula de SOPE');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (3, '15-05-21', 'B321', 'Aula de BDAD');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (4, '15-05-22', 'B310', 'Aula de CGRA');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (5, '15-05-23', 'B007', 'Aula de LPOO');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (1, '15-05-24', 'B214', 'Aula de CAL');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (3, '15-06-13', 'Parque da Cidade', 'NOS Primavera Sound');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (3, '15-06-21', 'Edificio AEFEUP', 'FEUPCaffe');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (4, '15-04-01', 'Via Rapida', 'Baconal Amarelo');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (6, '15-05-04', 'Barraca 79', 'Motivators');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (1, '15-06-17', 'B002', 'Assembleia Geral');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (14, '15-05-25', 'B103', 'Eleicoes AEFEUP');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (12, '15-03-22', 'Auditorio da FEUP', 'Encontro Solidario de Tunas');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (9, '15-08-22', 'Paredes de Coura', 'Paredes de Coura');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (10, '15-01-22', 'Auditorio da FEUP', 'Jornadas de Engenharia');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (5, '15-08-10', 'Viana do Castelo', 'NEOPOP');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (17, '15-04-01', 'Auditorio da FEUP', 'Sarau Cultural');
+INSERT INTO EVENTO (idCriador, data, local, nome) VALUES (4, '15-05-25', 'B310', 'Teste de PPIN');
 
 INSERT INTO GRUPO (idAdministrador, nomeGrupo) VALUES (2, 'Grupo de 2 ano');
-INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (3, 'Grupo para duvidas.', 'Grupo de 1 ano');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (5, 'Grupo para duvidas.', 'Grupo de 1 ano');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (17, 'Tudo o que queres saber.', 'Tradicoes Academicas');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (4, 'Utilizem as tags adequadamento', 'AEFEUP 2013/2014');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (5, 'TOP atualizado todos os dias', 'Musica POP');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (7, 'Grupo de Partilha sobre localizações de Radares.', 'Radares de Portugal');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (3, 'Grupo contra os bandidos que andam a patrulhar a FEUP', 'Movimento Anti-Gatuno');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (14, 'Partilha aqui os melhores momentos, músicas e eventos da noite do Porto.', 'Noite do Porto');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (8, 'Este grupo serve para conter todos os apontamentos da comunidade FEUP', 'Banco de Apontamentos');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (6, 'Local de convívio e partilha de fotos.', 'Pessoal que foi a LLoret 2012');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (12, 'Leiam as regras antes de postar', 'Negocios na Hora - Porto');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (9, 'Leiam as regras antes de postar', 'Negocios na Hora - Mirandela');
+INSERT INTO GRUPO (idAdministrador, descricao, nomeGrupo) VALUES (11, 'Bem-vindos ao maior grupo de Football Manager de Portugal.', 'Football Manager Portugal');
 
 INSERT INTO POST (idCriador, data, hora, texto, reputacao) VALUES (2, '15-02-20', '2015-02-20 14:13:13.344', 'Consegui bilhetes para o concerto', 4);
 INSERT INTO POST (idCriador, data, hora, texto, reputacao) VALUES (1, '15-03-04', '2015-03-04 09:31:55.520', 'Odeio transito!', 1);
