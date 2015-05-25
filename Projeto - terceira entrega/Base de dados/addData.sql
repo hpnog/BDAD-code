@@ -52,7 +52,6 @@ INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (6, 2, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (4, 8, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (9, 6, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (8, 5, 1);
-INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (2, 3, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (10, 11, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (9, 12, 1);
 INSERT INTO AMIZADE (idPerfilPede, idPerfilAceita, aceita) VALUES (3, 13, 1);

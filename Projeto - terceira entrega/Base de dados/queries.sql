@@ -1,4 +1,5 @@
 .read createDB.sql
+.read triggers.sql
 .read addData.sql
 
 --INTERROGACOES
