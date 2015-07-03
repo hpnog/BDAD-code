@@ -1,0 +1,24 @@
+1)
+	a)
+		1)
+			SELECT nr from aluno;
+			
+		2)
+			SELECT cod, design FROM cadeira WHERE cruso = 'AC';
+			
+		3)
+			SELECT nome FROM aluno INTERSECT SELECT nome FROM prof;
+			
+		4)
+			SELECT nome FROM aluno EXCEPT SELECT nome FROM prof;
+			
+		5)
+			SELECT nome FROM aluno UNION SELECT nome from prof;
+			
+		6)
+			SELECT nome FROM aluno WHERE
+				nr IN SELECT nr FROM prova WHERE cod = 'ts1';
+				
+		7)
+			SELECT DISTINCT aluno.nome FROM prova, aluno cadeira WHERE
+				aluno.nr = prova.nr AND prova.cod = cadeira.cod AND cadeira.curso = 'IS';

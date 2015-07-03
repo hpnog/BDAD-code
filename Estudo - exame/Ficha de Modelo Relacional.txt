@@ -1,0 +1,145 @@
+1)	
+
+	REFS (Titulo, Autor, Instituicao, Correio, S#, Revista, Sigla, Editor, Volume, Numero, PInicial, PFinal, Year, Mes)
+	
+	D = { 
+		Sigla → S#, Revista, Editor
+		S# → Sigla
+		Sigla, Volume, Numero → Year, Mes
+		Sigla, Volume, Numero, PInicial → Titulo, PFinal
+		Autor → Instituicao, Correio
+		} 
+	
+	a)
+		X+ = 
+		{
+			S#, Revista, Volume, Numero, Editor, Sigla, Year, Mes, Autor, Instituicao, Correio
+		}
+	
+	
+		Não é uma chave para referência pois a partir de X não me é possível chegar ao valor de Titulo, PInicia e PFinal.
+		
+	b)
+		R1(_Sigla_, S#, Revista, Editor)
+		R2(_S#_, Sigla)
+		R3(_Sigla_, _Volume_, _Numero_, Year, Mes)
+		R4(_Sigla_, _Volume_, _Numero_, _PInicial_, Titulo, PFinal)
+		R5(_Autor_, Instituicao, Correio)
+		
+		C(_Sigla_, _Volume_, _Numero_, _PInicial_, _Autor_)
+		
+	c)
+		Na decomposição em (b) foi adicionada uma relação na qual está a chave candidata. A utilização da terceira forma impede anomalias de atualização e proporciona a economização de espaço (duplicação de dados).
+		
+	d)
+		O SGBD deve ter a capacidade de definir restrições de unicidade.
+		
+2)
+	a)
+		AB→C
+		DE→C
+		B→D
+		
+		Chaves candidatas = { A, B, E }
+		
+	b)
+						A	B 	C 	D 	E
+		R1(A, B, C)		a	b	c	d1	e1
+		R2(C, D, E)		a1	b1	c	d	e
+		R3(B, D)		a2	b	c1	d	e2
+		
+		Não havendo linhas sem posfixos, então sabemos que esta decomposição não garante a junção sem perdas.
+		
+	c)
+						A	B 	C 	D 	E
+		R1(A, B, C)		a	b	c	d1	e1
+		R2(C, D, E)		a1	b1	c	d	e
+		R3(B, D)		a2	b	c1	d	e2
+		R4(A, B, E)		a	b	c2	d2	e
+		
+						A	B 	C 	D 	E
+		R1(A, B, C)		a	b	c	d1	e1
+		R2(C, D, E)		a1	b1	c	d	e
+		R3(B, D)		a2	b	c1	d	e2
+		R4(A, B, E)		a	b	<c>	d2	e
+		
+						A	B 	C 	D 	E
+		R1(A, B, C)		a	b	c	d1	e1
+		R2(C, D, E)		a1	b1	c	d	e
+		R3(B, D)		a2	b	c1	d	e2
+		R4(A, B, E)		a	b	c	<d>	e
+		
+						A	B 	C 	D 	E
+		R1(A, B, C)		a	b	c	d1	e1
+		R2(C, D, E)		a1	b1	c	d	e
+		R3(B, D)		a2	b	c1	d	e2
+		
+		R4(A, B, E)		a	b	c	d	e	<----- Neste caso já garante que não há perdas
+		
+	d)
+		R1(_A_, _B_, C)
+		R2(_D_, _E_, C)
+		R3(_B_, D)
+		R4(_A_, _B_, _E_)
+		
+	e)
+		AC -> B
+		
+3)
+	a)
+		Chaves da relação = { J, D, Q, V }
+		
+	b)
+		Não está pois, por exemple em R3, C não é funcionalmente dependente de toda a sua chave.
+		
+		R1(_S_, _D_, P)
+		R2(_J_, S)
+		R3(_J_, _P_, C)
+		R4(_J_, _D_, _Q_, _V_)
+		
+	
+	c)
+		Os 3 atributos nem estão presentes numa mesma relação portanto nõ é preservada.
+		
+	d)
+		C -> C <- X por ser trivial
+		C -> S <- X por C -> J e J -> S
+		C -> J
+		C -> D
+		C -> P <- por C -> J e J -> S e C -> D e SD -> P
+		C -> Q
+		C -> V
+		JP -> C
+		SD -> P
+		J -> S
+		
+		ou seja,
+		
+		C -> J
+		C -> D
+		C -> Q
+		C -> V
+		JP -> C
+		SD -> P
+		J -> S
+		
+4)
+	a)
+		C -> P
+		SH -> C
+		PH -> S
+		AC -> N
+		AH -> S
+		
+	b)
+		Chave = { H, A }
+		
+	c)
+		R1(_C_, P)
+		R2(_S_, _H_, C)
+		R3(_P_, _H_, S)
+		R4(_A_, _C_, N)
+		R5(_A_, _H_, S)
+		
+	d)
+		Todas as relações em c. encontram-se na FNBC, pois os lados esquerdos das DFs são chave (logo super-chave) nas respectivas relações. 
