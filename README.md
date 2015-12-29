@@ -1,4 +1,4 @@
-# BDAD-code
+# FEUP - BDAD
 
 Este repositório contém o código realizado em algumas fichas e nos projetos da Unidade Curricular de BDAD - FEUP.
 
